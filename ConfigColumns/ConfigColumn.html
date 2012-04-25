@@ -1,0 +1,175 @@
+<!--
+/*******************************************************************************
+* Copyright (c) 2012 Payoda Technologies Pvt Ltd
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+*******************************************************************************/
+
+-->
+
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/css/jquery.dataTables.css" />
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.0/jquery.dataTables.js"></script>
+
+    <script type="text/javascript" src="js/jquery.columnConfig.min.js"></script>
+	
+	<style type="text/css" >
+   
+   .row_selected
+   {
+    background-color: #74B9EF !important;
+   }
+   
+   </style>
+   </style>
+	
+</head>
+<body>
+
+ <div class="center" id="ConfigColumns">
+            <div>
+                <div id="blbHeaders" style="float:left">
+                    <table id="HiddenColumns" cellpadding="0" cellspacing="0"  class="table table-striped table-bordered table-condensed initialized">
+                        <thead>
+                            <tr>
+                                <th style="font-weight: bold;">
+                                    Hidden:
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr><td>Hidden 1</td></tr>
+						   <tr><td>Hidden 2</td></tr>
+						   <tr><td>Hidden 3</td></tr>
+						   <tr><td>Hidden 4</td></tr>
+						   <tr><td>Hidden 5</td></tr>
+						   <tr><td>Hidden 6</td></tr>
+						   <tr><td>Hidden 7</td></tr>
+						   <tr><td>Hidden 8</td></tr>
+						   <tr><td>Hidden 9</td></tr>
+						   <tr><td>Hidden 10</td></tr>
+						   <tr><td>Hidden 11</td></tr>
+						   <tr><td>Hidden 12</td></tr>
+						   <tr><td>Hidden 13</td></tr>
+						   <tr><td>Hidden 14</td></tr>
+						   <tr><td>Hidden 15</td></tr>
+						   <tr><td>Hidden 16</td></tr>
+						   <tr><td>Hidden 17</td></tr>
+						   <tr><td>Hidden 18</td></tr>
+						   <tr><td>Hidden 19</td></tr>
+						   <tr><td>Hidden 20</td></tr>
+						   <tr><td>Hidden 21</td></tr>
+						   <tr><td>Hidden 22</td></tr>
+						   <tr><td>Hidden 23</td></tr>
+						   <tr><td>Hidden 24</td></tr>
+						   <tr><td>Hidden 25</td></tr>
+						   <tr><td>Hidden 26</td></tr>
+						   <tr><td>Hidden 27</td></tr>
+						   <tr><td>Hidden 28</td></tr>
+						   <tr><td>Hidden 29</td></tr>
+						   <tr><td>Hidden 30</td></tr>
+						   <tr><td>Hidden 31</td></tr>
+						   <tr><td>Hidden 32</td></tr>
+						   <tr><td>Hidden 33</td></tr>
+						   <tr><td>Hidden 34</td></tr>
+						   <tr><td>Hidden 35</td></tr>
+						   <tr><td>Hidden 36</td></tr>
+						   <tr><td>Hidden 37</td></tr>
+						   <tr><td>Hidden 38</td></tr>
+						   <tr><td>Hidden 39</td></tr>
+						   <tr><td>Hidden 40</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="padding-top: 230px;float:left">
+                    <input type="button" class="btn" value="Show" id="btnAddBlb" style="width: 60px;" />
+                    <input type="button" class="btn" value="Hide" id="btnRemoveBlb" style="width: 60px;" />
+                </div>
+                <div id="VisibleFields" style="float:left">
+                    <table id="VisibleColumns" class="table table-striped table-bordered table-condensed">
+                        <thead>
+                            <tr>
+                                <th style="font-weight: bold;">
+                                    Visible:
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           <tr><td>Visible 1</td></tr>
+						   <tr><td>Visible 2</td></tr>
+						   <tr><td>Visible 3</td></tr>
+						   <tr><td>Visible 4</td></tr>
+						   <tr><td>Visible 5</td></tr>
+						   <tr><td>Visible 6</td></tr>
+						   <tr><td>Visible 7</td></tr>
+						   <tr><td>Visible 8</td></tr>
+						   <tr><td>Visible 9</td></tr>
+						   <tr><td>Visible 10</td></tr>
+						   <tr><td>Visible 11</td></tr>
+						   <tr><td>Visible 12</td></tr>
+						   <tr><td>Visible 13</td></tr>
+						   <tr><td>Visible 14</td></tr>
+						   <tr><td>Visible 15</td></tr>
+						   <tr><td>Visible 16</td></tr>
+						   <tr><td>Visible 17</td></tr>
+						   <tr><td>Visible 18</td></tr>
+						   <tr><td>Visible 19</td></tr>
+						   <tr><td>Visible 20</td></tr>
+						   <tr><td>Visible 21</td></tr>
+						   <tr><td>Visible 22</td></tr>
+						   <tr><td>Visible 23</td></tr>
+						   <tr><td>Visible 24</td></tr>
+						   <tr><td>Visible 25</td></tr>
+						   <tr><td>Visible 26</td></tr>
+						   <tr><td>Visible 27</td></tr>
+						   <tr><td>Visible 28</td></tr>
+						   <tr><td>Visible 29</td></tr>
+						   <tr><td>Visible 30</td></tr>
+						   <tr><td>Visible 31</td></tr>
+						   <tr><td>Visible 32</td></tr>
+						   <tr><td>Visible 33</td></tr>
+						   <tr><td>Visible 34</td></tr>
+						   <tr><td>Visible 35</td></tr>
+						   <tr><td>Visible 36</td></tr>
+						   <tr><td>Visible 37</td></tr>
+						   <tr><td>Visible 38</td></tr>
+						   <tr><td>Visible 39</td></tr>
+						   <tr><td>Visible 40</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div  style="padding-top: 230px;float:left">
+                    <input class="btn" type="button" value="Up" id="btnMoveUp" style="width: 60px;" />
+                    <input class="btn" type="button" value="Down" id="btnMoveDown" style="width: 60px;" />
+                </div>
+            </div>
+        </div>
+		  <div>
+                <div style="width:300px">
+                    <input class="btn" type="button" value="Save" id="btnSave" />
+                    <input type="button" class="btn" value="Cancel" id="btnCancel" />
+                </div>
+         </div>
+<script>
+
+
+ $('#ConfigColumns').rowToggler();
+ 
+  $('#btnSave').click(function (event) {
+  alert("Hidden Columns= "+ $('#HiddenColumns').GetValues({"separator":"~"}));
+  alert("Visible Columns= "+ $('#VisibleColumns').GetValues());
+  })
+
+</script>
+		
+</body>
+
+</html>
+	
