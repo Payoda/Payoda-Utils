@@ -1,0 +1,73 @@
+<!--
+/*******************************************************************************
+* Copyright (c) 2012 Payoda Technologies Pvt Ltd
+* All rights reserved. This program and the accompanying materials
+* are made available under the terms of the Eclipse Public License v1.0
+* which accompanies this distribution, and is available at
+* http://www.eclipse.org/legal/epl-v10.html
+*******************************************************************************/
+
+-->
+
+
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" />
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.17/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-modal.js"></script>
+	<script type="text/javascript" src="js/ModalDialog.min.js"></script>
+<title>
+Jquery Dialog Example
+</title>
+</head>
+<body>
+
+<center>
+<h2>Jquery bootstrap Dialog Plugin Example</h2>
+<label>Click here to Get Dialog Box</label>
+<input type="button" value=" Show " id="Show" class="btn-primary"/> 
+</center>
+<script>
+
+
+ $('#Show').click(function(){
+
+ 
+ $(document).Dialog(
+        {
+            "body": "Number I <input type='text' id='txtbox1'/></br>Number II <input type='text' id='txtbox2'/>",
+            "header": "<h3>Sample Dialog Header</h3>",
+            "title": "Sample Dialog Titile",
+            buttons: {
+                Add: function () {
+				
+				//You can Customize this function
+                    alert(parseInt($('#txtbox1').val())+parseInt($('#txtbox2').val()));
+					return false;
+                   
+
+            },
+
+            Minus: function () {
+                   alert(parseInt($('#txtbox1').val())-parseInt($('#txtbox2').val()));
+                   return false;
+            }//If You Want to add extra button add here like Minus button
+          
+        }
+    });
+  
+ 
+ });
+ 
+  $('#btnSave').click(function (event) {
+  alert("Hidden Columns= "+ $('#HiddenColumns').GetValues({"separator":"~"}));
+  alert("Visible Columns= "+ $('#VisibleColumns').GetValues());
+  })
+
+</script>
+
+</body>
+</html>
