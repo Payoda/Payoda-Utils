@@ -9,14 +9,14 @@
 (function ($) {
 
 
-    var isfirstTime = true;
+    
     var message;
     var title;
     var header;
 
     $.fn.Dialog = function (settings) {
 
-        if (isfirstTime) {
+       
             var configs = {
                 'body': 'message',
                 'header': 'header',
@@ -45,8 +45,7 @@
             header = configs['header'];
             $("body").append(" <div id='sample' title='" + title + "' style='display: none' class='modal fade'><div class='modal-header' id='mod-header'><a class='close' data-dismiss='modal' title='Close'><i class='icon-remove'></i></a><h3>                </h3>        </div>        <div class='modal-body' id='mod-body'>            <p>                            </p>        </div>" + modalFooter + "</div>");
             $("body").append(modalEvents);
-            isfirstTime = false;
-        }
+            
         $('#mod-body').html(message);
         $('#mod-header').html("<a class='close' data-dismiss='modal' title='Close'><i class='icon-remove'></i></a><h3>" + header + "</h3>");
         $('#sample').attr('title', title);
